@@ -1,0 +1,2 @@
+!this is device3
+!device 3 config ends
