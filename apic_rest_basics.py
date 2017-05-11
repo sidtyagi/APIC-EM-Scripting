@@ -5,20 +5,20 @@ Created on 13-Apr-2017
 '''
 #Cisco APIC-EM Python Sandbox v1.1
 #Accessing the dcloud APIC EM via the public IP
-#https://173.39.116.234/
-#173.39.116.153
-#admin
-#C1sco12345
+#https://1.2.3.4/
+#1.2.3.4
+#un
+#pwd
 
 import requests,ast,json,os,xlrd,sys,time
 requests.packages.urllib3.disable_warnings()
 
-un="admin"
-pwd="C1sco12345"
+un="username"
+pwd="pwd"
 
 def get_token(un,pwd):
     url= base_url+'/ticket'
-    #payload = "{\r\n\t\"password\": \"C1sc0123\",\r\n\t\"username\": \"admin\"\r\n}\r\n\r\n"
+    #payload = "{\r\n\t\"password\": \"pwd\",\r\n\t\"username\": \"un\"\r\n}\r\n\r\n"
     #payload = "{\r\n\t\"password\": \""+pwd+"\",\r\n\t\"username\": \""+un+"\"\r\n}\r\n\r\n"
     payload = "{\"password\": \""+pwd+"\",\"username\": \""+un+"\"\r\n}"
     headers = {
